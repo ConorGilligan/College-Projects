@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Study Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#tasks">Tasks</a>
+      <a href="#profile">Profile</a>
+    </nav>
+
+    <h1>My Study Dashboard</h1>
+
+    <p id="welcomeMessage"></p>
+  </header>
+
+  <main id="home" class="card">
+
+      <section id="profile" class="card1 profile-card">
+        <h2>Conor Gilligan</h2>
+        <p class="about">
+          I am a second year Computer science and Software engineering student. This page will track my weekly goals and study.
+        </p>
+
+        <img class="profile-img" src="Kevin Heart.jpeg" alt="Profile photo" />
+      </section>
+
+      <section id="tasks" class="card1">
+        <h2>Weekly Goals</h2>
+        <ul class="goals-list">
+          <li>Attend lectures</li>
+          <li>Finish labs</li>
+          <li>Practice Code</li>
+          <li>Review notes</li>
+        </ul>
+
+        <button id="showGoalsBtn" type="button">Show Goals</button>
+        <ul id="goalsOutput" class="goals-output"></ul>
+      </section>
+
+      <section id="status" class="card1">
+        <h2>Study Status</h2>
+        <p class="status-text">Status: Active</p>
+        <p id="sessionText">Study sessions today: 0</p>
+        <div class="buttonrow">
+          <button id="addSessionBtn" type="button">Add Session</button>
+          <button id="resetBtn" type="button">Reset</button>
+        </div>
+      </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Conor Gilligan | This page is for study traking</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
