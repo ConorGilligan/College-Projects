@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+
+  <nav>
+    <button onclick="showSection('artists')">Artists</button>
+    <button onclick="showSection('albums')">Albums</button>
+    <button onclick="showSection('songs')">Songs</button>
+  </nav>
+
+
+
+
+  <h1>Music Library</h1>
+
+
+
+
+  <div id="artists">
+    <h2>Artists</h2>
+
+    <input id="artistId" placeholder="ID for update/delete">
+    <input id="artistName" placeholder="Artist Name">
+    <input id="artistGenre" placeholder="Genre">
+    <input id="artistListeners" placeholder="Monthly Listeners">
+
+    <button onclick="createArtist()">Add Artist</button>
+    <button onclick="updateArtist()">Update Artist</button>
+    <button onclick="deleteArtist()">Delete Artist</button>
+
+    <table id="artistsTable"></table>
+  </div>
+
+
+
+
+
+
+
+  <div id="albums" style="display:none;">
+    <h2>Albums</h2>
+
+    <input id="albumId" placeholder="ID for update/delete">
+    <input id="albumName" placeholder="Album Name">
+    <input id="albumYear" placeholder="Release Year">
+    <input id="albumListens" placeholder="Number of Listens">
+    <input id="albumArtistId" placeholder="Artist ID">
+
+    <button onclick="createAlbum()">Add Album</button>
+    <button onclick="updateAlbum()">Update Album</button>
+    <button onclick="deleteAlbum()">Delete Album</button>
+
+    <table id="albumsTable"></table>
+  </div>
+
+
+
+
+
+
+  <div id="songs" style="display:none;">
+    <h2>Songs</h2>
+
+    <input id="songId" placeholder="ID for update/delete">
+    <input id="songName" placeholder="Song Name">
+    <input id="songYear" placeholder="Release Year">
+    <input id="songAlbumId" placeholder="Album ID">
+
+    <button onclick="createSong()">Add Song</button>
+    <button onclick="updateSong()">Update Song</button>
+    <button onclick="deleteSong()">Delete Song</button>
+
+    <table id="songsTable"></table>
+  </div>
+
+
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
